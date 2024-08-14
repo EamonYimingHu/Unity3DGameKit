@@ -19,7 +19,7 @@ Onedrive链接：https://1drv.ms/v/s!Av502t1TJ38dgTgvRrTRbIJDWvvD
 
 主角有四连击的Combo，并且需要分开攻击(Attack)音效与受击音效（Hit），同时考虑击中时需要提供正反馈音效（Impact）。因此先设计一个多层音效叠加出的Attack，再通过调整每层音效的具体Pitch，Level来做出Combo之间的区别。在此基础之上，为给玩家提供更强的正反馈，Impact和Hit需再单独设计，并整体混音时在听感上要占足够地位。
 
-##思考不同实现方法
+## 思考不同实现方法
 
 ● 利用游戏demo中已有的攻击系统，修改脚本，结合Wwise和脚本中的攻击逻辑实现Attack音效。
 
