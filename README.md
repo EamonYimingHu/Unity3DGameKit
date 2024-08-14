@@ -40,4 +40,12 @@ Onedrive链接：https://1drv.ms/v/s!Av502t1TJ38dgTgvRrTRbIJDWvvD
 
 # 脚步声的切换
 
+● 按照Wwise301中的做法，可以为每个地面手动添加一个材质，再通过checkMaterial方法获取到，最后在脚本中通过PlayerManager访问后postevent
+
+● 其他做法是：为PlayerController添加GetGroundMaterial，利用射线检测法获取地面材质；再创建一个字典将游戏中的材质对应连接到Wwise的SwitchGroup
+
+![image](https://github.com/user-attachments/assets/4ffd4785-5b5d-457a-8362-26646a58d1bb)
+
+![image](https://github.com/user-attachments/assets/a7989bcd-73d3-4aee-8499-58184e188bcf)
+
 
