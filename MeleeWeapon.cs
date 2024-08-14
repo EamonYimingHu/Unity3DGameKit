@@ -17,7 +17,7 @@ namespace Gamekit3D
             public Transform attackRoot;
 
 #if UNITY_EDITOR
-            //editor only as it's only used in editor to display the path of the attack that is used by the raycast
+           
             [NonSerialized] public List<Vector3> previousPositions = new List<Vector3>();
 #endif
 
