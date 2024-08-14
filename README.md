@@ -1,5 +1,6 @@
 # Unity3DGameKit
-3DGameKit音频重置
+
+在对3DGameKit音频重置的过程中，熟悉游戏音频的工作流，思考和了解不同的音频系统的实现方法
 
 ● 独立完成了音效设计与制作（从初期采样到DAW中的音效制作与处理），借此了解音效师的工作流
 
@@ -7,7 +8,11 @@
 
 ● 禁用其本身的Unity音频系统后，思考不同的音效触发的实现方式
 
-以下仅以攻击音效部分为例说明
+游戏片段视频展示：
+Youtube链接：https://youtu.be/n4FCFsN1X0U
+Onedrive链接：https://1drv.ms/v/s!Av502t1TJ38dgTgvRrTRbIJDWvvD
+
+以下仅举1-2例说明
 
 # 攻击ATTACK音效的不同实现方法
 ## 简述声音设计部分
@@ -21,9 +26,16 @@
 示例代码片段：
 ![image](https://github.com/user-attachments/assets/2838416b-3d86-4456-86a3-4e818b5fc2d2)
 
-● 使用动画系统Animator，Animation.通过在动画关键帧绑定Animation EVENT，添加脚本postevent触发音效
+● 利用动画系统Animator，Animation.
+
+通过在动画关键帧绑定Animation EVENT，可通过在脚本中添加public方法，为这类通过动画关键帧触发音效的统一设置postevent来触发音效
+
 ![image](https://github.com/user-attachments/assets/7ba9304c-157d-4142-a362-9572a6ba9bc7)
 
 ● Unity音频系统方式触发：
 
 通过攻击系统中BeginAttack下判断if (attackAudio != null)，触发attackAudio.PlayRandomClip();
+
+# 脚步声的切换
+
+
